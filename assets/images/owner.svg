@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#f1dcc3"/>
+  <circle cx="200" cy="160" r="70" fill="#c9682f"/>
+  <rect x="100" y="250" width="200" height="150" rx="40" fill="#c9682f"/>
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="16" fill="#5a3418" text-anchor="middle">Foto Pemilik — ganti owner.svg</text>
+</svg>

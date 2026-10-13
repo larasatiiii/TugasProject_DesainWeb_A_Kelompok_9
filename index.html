@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pala Raos Bogor - Beranda</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header & Navigasi -->
+  <header>
+    <div class="logo">Pala <span>Raos Bogor</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="aktif">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="data.html">Menu &amp; Harga</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <img src="assets/images/hero.jpg" alt="Biji pala kering khas Bogor">
+    <div class="hero-overlay">
+      <h1>Olahan Pala Khas Bogor, Asli dari Kebun Kami</h1>
+      <p>UMKM rumahan yang mengolah buah pala segar dari lereng Bogor menjadi manisan, sirup, dan camilan khas tanpa bahan pengawet.</p>
+      <a href="data.html" class="btn">Lihat Produk Kami</a>
+    </div>
+  </div>
+
+  <!-- Keunggulan -->
+  <section>
+    <div class="section-judul">
+      <h2>Kenapa Pilih Kami?</h2>
+      <div class="garis"></div>
+    </div>
+
+    <div class="kartu-grup">
+      <div class="kartu">
+        <div class="ikon">1</div>
+        <h3>Pala Asli Bogor</h3>
+        <p>Dipetik langsung dari kebun pala di kawasan Puncak dan sekitar Bogor, tanpa perantara.</p>
+      </div>
+      <div class="kartu">
+        <div class="ikon">2</div>
+        <h3>Tanpa Pengawet</h3>
+        <p>Diolah secara tradisional dengan gula asli, tanpa bahan pengawet kimia tambahan.</p>
+      </div>
+      <div class="kartu">
+        <div class="ikon">3</div>
+        <h3>Aneka Olahan</h3>
+        <p>Mulai dari manisan, sirup, permen, selai, hingga dodol — semua dari buah pala pilihan.</p>
+      </div>
+    </div>
+  </section>
+
+   <!-- Section Kontak Kami -->
+  <section id="kontak">
+    <div class="section-judul">
+      <h2>Kontak Kami</h2>
+      <div class="garis"></div>
+      <p class="kontak-subjudul">
+        Punya pertanyaan atau ingin memesan olahan pala khas Bogor?
+        Hubungi kami melalui informasi berikut atau kirim pesan melalui formulir.
+      </p>
+    </div>
+
+    <div class="kontak-wrapper">
+
+      <!-- Kiri: Informasi Kontak -->
+      <div class="kontak-info">
+        <h3>Informasi Kontak</h3>
+        <p class="kontak-deskripsi">
+          Kami siap membantu kamu mendapatkan produk olahan pala
+          berkualitas dari Pala Raos Bogor.
+        </p>
+
+        <div class="kontak-item">
+          <div class="kontak-ikon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            <h4>Alamat</h4>
+            <p>Jl. Raya Puncak No. 45, Cisarua, Bogor, Jawa Barat</p>
+          </div>
+        </div>
+
+        <div class="kontak-item">
+          <div class="kontak-ikon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div>
+            <h4>Telepon</h4>
+            <p><a href="tel:081234567890">0812-3456-7890</a></p>
+          </div>
+        </div>
+
+        <div class="kontak-item">
+          <div class="kontak-ikon">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <div>
+            <h4>Jam Operasional</h4>
+            <p>Setiap hari, 08.00–17.00 WIB</p>
+          </div>
+        </div>
+
+        <div class="kontak-item">
+          <div class="kontak-ikon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div>
+            <h4>Instagram</h4>
+            <p>
+              <a href="https://www.instagram.com/palaraosbogor/"
+                 target="_blank" rel="noopener noreferrer">
+                @palaraosbogor
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kanan: Form Kirim Pesan -->
+      <div class="kontak-form">
+        <h3>Kirim Pesan</h3>
+
+        <form action="#" method="post">
+          <div class="form-grup">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama"
+                   placeholder="Masukkan nama kamu" required>
+          </div>
+
+          <div class="form-grup">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"
+                   placeholder="contoh@email.com" required>
+          </div>
+
+          <div class="form-grup">
+            <label for="subjek">Subjek</label>
+            <input type="text" id="subjek" name="subjek"
+                   placeholder="Keperluan kamu" required>
+          </div>
+
+          <div class="form-grup">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5"
+                      placeholder="Tulis pesan kamu di sini..."
+                      required></textarea>
+          </div>
+
+          <button type="submit" class="btn-kontak">
+            <i class="fa-solid fa-paper-plane"></i>
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Pala Raos Bogor. Dibuat untuk Tugas Kelompok Desain Web.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,651 @@
+/* ==========================================================
+   DAPUR NUSANTARA - STYLE.CSS
+   UMKM Kuliner Lokal - Website Profil Responsif
+   ========================================================== */
+
+/* ---------- Reset & Variabel ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --coklat-tua: #5a3418;
+  --coklat-utama: #8a4b2f;
+  --oranye: #c97b3d;
+  --krem: #fdf6ee;
+  --krem-tua: #f1dcc3;
+  --teks: #3a2a1d;
+  --putih: #ffffff;
+  --font-judul: "Georgia", "Times New Roman", serif;
+  --font-teks: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--font-teks);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--teks);
+  background-color: var(--krem);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ---------- Header & Navigasi ---------- */
+header {
+  background-color: var(--coklat-tua);
+  color: var(--putih);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: var(--font-judul);
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.logo span {
+  color: var(--oranye);
+}
+
+nav ul {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+nav a:hover,
+nav a.aktif {
+  background-color: var(--oranye);
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  position: relative;
+  color: var(--putih);
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(58, 30, 13, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-family: var(--font-judul);
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  max-width: 520px;
+  margin-bottom: 22px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--oranye);
+  color: var(--putih);
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: var(--coklat-utama);
+}
+
+/* ---------- Section Umum ---------- */
+section {
+  padding: 60px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-judul {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-judul h2 {
+  font-family: var(--font-judul);
+  font-size: 32px;
+  color: var(--coklat-tua);
+  margin-bottom: 8px;
+}
+
+.section-judul .garis {
+  width: 60px;
+  height: 4px;
+  background-color: var(--oranye);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* ---------- Flexbox Card Konten (Beranda) ---------- */
+.kartu-grup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.kartu {
+  background-color: var(--putih);
+  border-radius: 14px;
+  padding: 30px 24px;
+  flex: 1 1 280px;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(90, 52, 24, 0.08);
+  transition: 0.3s;
+}
+
+
+.kartu:hover {
+    transform: translateY(-5px);
+    background-color: #83654d;
+}
+
+
+.kartu:hover h3 {
+    color: white;
+}
+
+.kartu:hover p {
+    color: #f5eee8;
+}
+
+
+.kartu .ikon {
+  width: 56px;
+  height: 56px;
+  background-color: var(--krem-tua);
+  color: var(--coklat-utama);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto 16px;
+}
+
+.kartu h3 {
+  color: var(--coklat-tua);
+  margin-bottom: 8px;
+  font-size: 19px;
+}
+
+.kartu p {
+  font-size: 14px;
+  color: #6b5641;
+}
+
+/* ---------- Profil / Cerita Usaha ---------- */
+.profil-wrap {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profil-foto {
+  flex: 1 1 280px;
+  max-width: 320px;
+}
+
+.profil-foto img {
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(90, 52, 24, 0.15);
+}
+
+.profil-teks {
+  flex: 1 1 400px;
+}
+
+.profil-teks h2 {
+  font-family: var(--font-judul);
+  color: var(--coklat-tua);
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.profil-teks p {
+  margin-bottom: 14px;
+}
+
+.visi-misi {
+  margin-top: 30px;
+}
+
+.visi-misi > div {
+  background-color: var(--putih);
+  border-left: 5px solid var(--oranye);
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 16px;
+}
+
+.visi-misi h4 {
+  color: var(--coklat-tua);
+  margin-bottom: 6px;
+}
+
+/* ---------- Galeri Produk ---------- */
+.galeri-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.galeri-item {
+  flex: 1 1 280px;
+  max-width: 340px;
+  background-color: var(--putih);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(90, 52, 24, 0.08);
+}
+
+.galeri-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.galeri-caption {
+  padding: 14px 16px;
+}
+
+.galeri-caption h4 {
+  color: var(--coklat-tua);
+  margin-bottom: 4px;
+}
+
+.galeri-caption p {
+  font-size: 13px;
+  color: #6b5641;
+}
+
+/* ---------- Tabel Menu & Harga ---------- */
+.tabel-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--putih);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(90, 52, 24, 0.08);
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  color: var(--coklat-tua);
+  font-size: 18px;
+  padding: 10px 4px;
+}
+
+th, td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--krem-tua);
+}
+
+th {
+  background-color: var(--coklat-utama);
+  color: var(--putih);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--krem);
+}
+
+tbody tr:hover {
+  background-color: var(--krem-tua);
+}
+
+.harga {
+  font-weight: bold;
+  color: var(--coklat-utama);
+}
+
+.foto-menu {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.catatan-tabel {
+  margin-top: 30px;
+  background-color: var(--krem-tua);
+  border-left: 5px solid var(--oranye);
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* ---------- Section Kontak Kami ---------- */
+
+.kontak-subjudul {
+  max-width: 650px;
+  margin: 16px auto 0;
+  color: #6b5641;
+  font-size: 15px;
+}
+
+.kontak-wrapper {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.kontak-info,
+.kontak-form {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(90, 52, 24, 0.08);
+}
+
+.kontak-info {
+  background-color: var(--coklat-tua);
+  color: var(--putih);
+}
+
+.kontak-form {
+  background-color: var(--putih);
+}
+
+.kontak-info h3,
+.kontak-form h3 {
+  font-family: var(--font-judul);
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.kontak-info h3 {
+  color: var(--krem-tua);
+}
+
+.kontak-form h3 {
+  color: var(--coklat-tua);
+}
+
+.kontak-deskripsi {
+  color: var(--krem-tua);
+  font-size: 14px;
+  margin-bottom: 26px;
+}
+
+.kontak-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.kontak-ikon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.kontak-item h4 {
+  color: var(--oranye);
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.kontak-item p {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.kontak-item a {
+  color: var(--putih);
+  transition: color 0.3s;
+}
+
+.kontak-item a:hover {
+  color: var(--oranye);
+}
+
+.form-grup {
+  margin-bottom: 18px;
+}
+
+.form-grup label {
+  display: block;
+  color: var(--coklat-tua);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.form-grup input,
+.form-grup textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--krem-tua);
+  border-radius: 8px;
+  background-color: var(--krem);
+  color: var(--teks);
+  font-family: var(--font-teks);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-grup input:focus,
+.form-grup textarea:focus {
+  border-color: var(--oranye);
+  box-shadow: 0 0 0 3px rgba(201, 123, 61, 0.15);
+}
+
+.form-grup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-kontak {
+  width: 100%;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--oranye);
+  color: var(--putih);
+  font-family: var(--font-teks);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-kontak:hover {
+  background-color: var(--coklat-utama);
+}
+
+.kontak-ikon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--oranye);
+  border-radius: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.kontak-item:hover .kontak-ikon {
+  background-color: var(--oranye);
+  color: var(--putih);
+  transform: translateY(-3px);
+}
+
+/* Responsif Kontak */
+@media (max-width: 768px) {
+  .kontak-wrapper {
+    flex-direction: column;
+  }
+
+  .kontak-info,
+  .kontak-form {
+    flex: auto;
+    width: 100%;
+    padding: 24px;
+  }
+
+  .kontak-info h3,
+  .kontak-form h3 {
+    font-size: 22px;
+  }
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: var(--coklat-tua);
+  color: var(--krem-tua);
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE - MEDIA QUERY
+   ========================================================== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-overlay h1 {
+    font-size: 34px;
+  }
+
+  section {
+    padding: 50px 24px;
+  }
+
+  .profil-wrap {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 4px;
+  }
+
+  nav a {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .hero img {
+    height: 300px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 26px;
+  }
+
+  .hero-overlay p {
+    font-size: 15px;
+  }
+
+  .section-judul h2 {
+    font-size: 24px;
+  }
+
+  section {
+    padding: 36px 16px;
+  }
+
+  th, td {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+
+  .foto-menu {
+    width: 50px;
+    height: 50px;
+  }
+}
