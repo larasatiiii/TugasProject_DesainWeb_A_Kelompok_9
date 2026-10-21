@@ -5,13 +5,13 @@ Tema: UMKM Produk Lokal (Olahan Buah Pala Khas Bogor)
 
 ## Anggota Kelompok
 
-| Nama | NPM | Tugas |
-|---|---|---|
-| [Nama 1] | [NPM] | Koordinator / Integrator |
-| [Nama 2] | [NPM] | HTML Content |
-| [Nama 3] | [NPM] | Media & Data |
-| [Nama 4] | [NPM] | CSS & Layout |
-| [Nama 5] | [NPM] | Quality & Presenter |
+| Nama | NPM |
+|---|---|
+| [Khaira Rahma Apriliani] | [4525210108] | 
+| [Ardhelia Salsabila Al Bahri] | [4525210092] | 
+| [Ayu Arimbi] | [4525210140] | 
+| [Larasati Dewi] | [4525210037] | 
+| [Adelita Daeli] | [4525210049] | 
 
 ## Cara Menjalankan
 
